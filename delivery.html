@@ -2,15 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Beijing Cottage Chinese Restaurant Home</title>
+    <title>Beijing Cottage Chinese Restaurant</title>
     <meta name="description" content="Beijing Cottage"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');;
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+      @import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
+      @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
     </style>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
-
   <body>
     <div class="navbar-address">
       <p>Beijing Cottage Chinese Restaurant, 49 South End, Croydon, Surrey, CR0 1BF, UK 0208 8688 2046</p>
@@ -27,14 +32,27 @@
       <div class="navbar-wagon-right hidden-xs hidden-sm">
         <a href="home.html" class="navbar-wagon-item navbar-wagon-link">Home</a>
         <a href="menu.html" class="navbar-wagon-item navbar-wagon-link">Our Menu</a>
-        <a href="delivery.html" class="navbar-wagon-item navbar-wagon-link">Delivery & Collections</a>
+        <a href="delivery.html" class="navbar-wagon-item navbar-wagon-link">Delivery</a>
         <a href="reservations.html" class="navbar-wagon-item navbar-wagon-link">Reservations</a>
         <a href="contact.html" class="navbar-wagon-item navbar-wagon-link">Contact Us</a>
       </div>
+      <!-- Dropdown appearing on mobile only -->
+      <div class="navbar-wagon-item hidden-md hidden-lg">
+        <div class="dropdown">
+          <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li><a href="home.html" class="navbar-wagon-item navbar-wagon-link">Home</a></li>
+            <li><a href="menu.html" class="navbar-wagon-item navbar-wagon-link">Our Menu</a></li>
+            <li><a href="delivery.html" class="navbar-wagon-item navbar-wagon-link">Delivery</a></li>
+            <li><a href="reservations.html" class="navbar-wagon-item navbar-wagon-link">Reservations</a></li>
+            <li><a href="contact.html" class="navbar-wagon-item navbar-wagon-link">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="delivery-banner" style="background-image: url('http://res.cloudinary.com/dnvhnyuny/image/upload/v1518010409/beijingcottage/delivery.png');"">
+    <div class="delivery-banner" style="background-image: url('http://res.cloudinary.com/dnvhnyuny/image/upload/v1518660362/beijingcottage/delivery.jpg');"">
       <div class="delivery-banner-content">
-        <h1>DELIVERY & COLLECTIONS</h1>
+        <h1>DELIVERY</h1>
       </div>
     </div>
     <div class="delivery-content">
@@ -47,7 +65,6 @@
       <p>Please allow 45 minutes for delivery. During busy periods, the delivery may take longer.</p>
       <p>Cheque is not accepted. Credit cards will not be accepted for orders under £10.</p>
     </div>
-
     <div class="footer">
       <div class="footer-left">
         <div class="footer-links">
@@ -70,6 +87,5 @@
         <p>Made with <i class="fa fa-heart"></i> by <a href="http://www.jessicachoong.com" target="blank">Jess</a>. Copyright 2017 Beijing Cottage. All Rights Reserved.</p>
       </div>
     </div>
-
   </body>
 </html>

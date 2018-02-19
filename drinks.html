@@ -2,15 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Beijing Cottage Chinese Restaurant Home</title>
+    <title>Beijing Cottage Chinese Restaurant</title>
     <meta name="description" content="Beijing Cottage"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');;
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+      @import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
+      @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
     </style>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
-
   <body>
     <div class="navbar-address">
       <p>Beijing Cottage Chinese Restaurant, 49 South End, Croydon, Surrey, CR0 1BF, UK 0208 8688 2046</p>
@@ -27,9 +32,22 @@
       <div class="navbar-wagon-right hidden-xs hidden-sm">
         <a href="home.html" class="navbar-wagon-item navbar-wagon-link">Home</a>
         <a href="menu.html" class="navbar-wagon-item navbar-wagon-link">Our Menu</a>
-        <a href="delivery.html" class="navbar-wagon-item navbar-wagon-link">Delivery & Collections</a>
+        <a href="delivery.html" class="navbar-wagon-item navbar-wagon-link">Delivery</a>
         <a href="reservations.html" class="navbar-wagon-item navbar-wagon-link">Reservations</a>
         <a href="contact.html" class="navbar-wagon-item navbar-wagon-link">Contact Us</a>
+      </div>
+      <!-- Dropdown appearing on mobile only -->
+      <div class="navbar-wagon-item hidden-md hidden-lg">
+        <div class="dropdown">
+          <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li><a href="home.html" class="navbar-wagon-item navbar-wagon-link">Home</a></li>
+            <li><a href="lunch.html" class="navbar-wagon-item navbar-wagon-link">Our Menu</a></li>
+            <li><a href="delivery.html" class="navbar-wagon-item navbar-wagon-link">Delivery</a></li>
+            <li><a href="reservations.html" class="navbar-wagon-item navbar-wagon-link">Reservations</a></li>
+            <li><a href="contact.html" class="navbar-wagon-item navbar-wagon-link">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="menu-container">
@@ -54,7 +72,7 @@
         </div>
       </div>
       <div class="menu-right-container">
-        <div class="menu-banner" style="background-image: url('http://res.cloudinary.com/dnvhnyuny/image/upload/v1518010428/beijingcottage/menu.png');"">
+        <div class="menu-banner" style="background-image: url('http://res.cloudinary.com/dnvhnyuny/image/upload/v1518660340/beijingcottage/menu.jpg');"">
           <div class="menu-banner-content">
             <h1>OUR MENU</h1>
           </div>
@@ -106,7 +124,7 @@
             <p>£4.50</p>
           </div>
           <div class="menu-item">
-            <p>Spirit and mixer</p>
+            <p>Spirit and Mixer</p>
             <p>£4.95</p>
           </div>
         </div>

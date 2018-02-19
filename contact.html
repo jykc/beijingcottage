@@ -2,15 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Beijing Cottage Chinese Restaurant Reservations</title>
+    <title>Beijing Cottage Chinese Restaurant</title>
     <meta name="description" content="Beijing Cottage"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');;
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+      @import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
+      @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
     </style>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
-
   <body>
     <div class="navbar-address">
       <p>Beijing Cottage Chinese Restaurant, 49 South End, Croydon, Surrey, CR0 1BF, UK 0208 8688 2046</p>
@@ -27,17 +32,29 @@
       <div class="navbar-wagon-right hidden-xs hidden-sm">
         <a href="home.html" class="navbar-wagon-item navbar-wagon-link">Home</a>
         <a href="menu.html" class="navbar-wagon-item navbar-wagon-link">Our Menu</a>
-        <a href="delivery.html" class="navbar-wagon-item navbar-wagon-link">Delivery & Collections</a>
+        <a href="delivery.html" class="navbar-wagon-item navbar-wagon-link">Delivery</a>
         <a href="reservations.html" class="navbar-wagon-item navbar-wagon-link">Reservations</a>
         <a href="contact.html" class="navbar-wagon-item navbar-wagon-link">Contact Us</a>
       </div>
+      <!-- Dropdown appearing on mobile only -->
+      <div class="navbar-wagon-item hidden-md hidden-lg">
+        <div class="dropdown">
+          <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li><a href="home.html" class="navbar-wagon-item navbar-wagon-link">Home</a></li>
+            <li><a href="menu.html" class="navbar-wagon-item navbar-wagon-link">Our Menu</a></li>
+            <li><a href="delivery.html" class="navbar-wagon-item navbar-wagon-link">Delivery</a></li>
+            <li><a href="reservations.html" class="navbar-wagon-item navbar-wagon-link">Reservations</a></li>
+            <li><a href="contact.html" class="navbar-wagon-item navbar-wagon-link">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="contact-banner" style="background-image: url('http://res.cloudinary.com/dnvhnyuny/image/upload/v1518010436/beijingcottage/contact.png');"">
+    <div class="contact-banner" style="background-image: url('http://res.cloudinary.com/dnvhnyuny/image/upload/v1518660368/beijingcottage/contact.jpg');"">
       <div class="contact-banner-content">
         <h1>CONTACT US</h1>
       </div>
     </div>
-
     <div class="contact-content">
       <div class="content-text">
         <p>We’re located in the South End of Croydon High Street. Pay and display parking is accessible around the main street and behind our restaurant. </p>
@@ -51,6 +68,19 @@
         <p><b>EMAIL:</b><br>
         contact@beijingcottage.co.uk</p>
         <p><i>Or send us a message using the form below...</i></p>
+        <div class="contact-form-container">
+          <form action="https://formspree.io/jessicachoonguk@gmail.com" method="POST">
+            <div class="form-email">
+              <input type="email" name="_replyto" class="email" placeholder="Email">
+            </div>
+            <div class="form-text">
+              <textarea name="name" class="message" placeholder="Your message..."></textarea>
+            </div>
+            <div class="form-submit">
+              <input type="submit" value="Submit" class="submit-button">
+            </div>
+          </form>
+        </div>
         <p><b>OPENING HOURS:</b><br>
         Mon - Thur:  12:00 -14:30, 18:00 - 23:30<br>
         Fri - Sat: 12:00 -14:30, 18:00 - Midnight<br>
@@ -63,11 +93,10 @@
       </div>
       <div class="right-container">
         <div id="map">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.0021900514157!2d-0.10108964916336789!3d51.36625642873482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876074a26aca45d%3A0xc2ec7b0e93cb7e16!2sBeijing+Cottage!5e0!3m2!1sen!2suk!4v1517740613792" width="800" height="470" frameborder="0" style="border:0" allowfullscreen></iframe>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.0021900514157!2d-0.10108964916336789!3d51.36625642873482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876074a26aca45d%3A0xc2ec7b0e93cb7e16!2sBeijing+Cottage!5e0!3m2!1sen!2suk!4v1517740613792" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
-
     <div class="footer">
       <div class="footer-left">
         <div class="footer-links">
@@ -90,6 +119,5 @@
         <p>Made with <i class="fa fa-heart"></i> by <a href="http://www.jessicachoong.com" target="blank">Jess</a>. Copyright 2017 Beijing Cottage. All Rights Reserved.</p>
       </div>
     </div>
-
   </body>
 </html>
