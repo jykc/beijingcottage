@@ -2,18 +2,20 @@
   display: flex;
 }
 .side-menu {
-  width: 20vw;
+  /*width: 20vw;*/
   margin-left: 20px;
   margin-top: 20px;
   text-align: center;
+  margin-right: 20px;
 }
 .menu-banner {
-   align-items: flex-end;
+  align-items: flex-end;
   display:flex;
   justify-content: center;
   color: white;
   text-align: center;
   background-size: cover !important;
+  background-position: center;
   height: 30vh;
   flex-grow: 1;
 }
@@ -82,3 +84,4 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+

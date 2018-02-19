@@ -16,16 +16,27 @@ body {
 .banner img {
   height: 100vh;
 }
+@media screen and (max-width: 600px) {
+  .banner img{
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
 .banner-left-container {
   display: flex;
   justify-content: center;
+  padding-left: 10px;
   flex-grow: 1;
   align-items: center;
   padding-bottom: 100px;
   background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.8));
 }
 .banner h1 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   text-shadow: 0px 2px rgba(0, 0, 0, 0.4);
   margin-bottom: 20px;

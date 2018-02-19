@@ -5,6 +5,7 @@
   color: white;
   text-align: center;
   background-size: cover !important;
+  background-position: center;
   height: 30vh;
 }
 .delivery-banner-content {

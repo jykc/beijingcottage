@@ -5,6 +5,7 @@
   color: white;
   text-align: center;
   background-size: cover !important;
+  background-position: center;
   height: 30vh;
 }
 .contact-banner-content {
@@ -27,7 +28,7 @@
   padding-bottom: 60px;
 }
 .content-text {
-  width: 30vw;
+
   text-align: left;
   margin-left: 50px;
   margin-right: 40px;
@@ -41,4 +42,14 @@
   flex-grow: 1;
   margin-right: 50px;
   margin-top: 30px;
+}
+@media screen and (max-width: 600px) {
+  #map{
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
 }
